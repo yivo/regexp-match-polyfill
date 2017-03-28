@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    regexp-match-polyfill (1.0.0)
+    regexp-match-polyfill (1.0.1)
 
 GEM
   remote: https://rubygems.org/

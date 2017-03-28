@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.version         = RegexpMatchPolyfill::VERSION
   s.author          = 'Yaroslav Konoplov'
   s.email           = 'eahome00@gmail.com'
-  s.summary         = 'Implements Regexp#match? and String#match? in Ruby < 2.4.'
-  s.description     = 'Implements Regexp#match? and String#match? in Ruby < 2.4.'
+  s.summary         = 'Implements Regexp#match?, String#match? and Symbol#match? in Ruby < 2.4.'
+  s.description     = 'Implements Regexp#match?, String#match? and Symbol#match? in Ruby < 2.4.'
   s.homepage        = 'https://github.com/yivo/regexp-match-polyfill'
   s.license         = 'MIT'
 

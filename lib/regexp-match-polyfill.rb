@@ -1,7 +1,10 @@
 # encoding: UTF-8
 # frozen_string_literal: true
 
-unless Regexp.instance_methods.include?(:match?) && String.instance_methods.include?(:match?)
+unless Regexp.instance_methods.include?(:match?) &&
+       String.instance_methods.include?(:match?) &&
+       Symbol.instance_methods.include?(:match?)
+
   module RegexpMatchPolyfill
     module RegexpExtension
       def match?(string, position = 0)
@@ -18,4 +21,5 @@ unless Regexp.instance_methods.include?(:match?) && String.instance_methods.incl
 
   Regexp.include RegexpMatchPolyfill::RegexpExtension
   String.include RegexpMatchPolyfill::StringExtension
+  Symbol.include RegexpMatchPolyfill::StringExtension
 end

@@ -14,4 +14,9 @@ class RegexpMatchPolyfillTest < Test::Unit::TestCase
     assert_true 'foo'.match?(/foo/)
     assert_false 'foo'.match?(/bar/)
   end
+
+  def test_symbol_match
+    assert_true :foo.match?(/foo/)
+    assert_false :foo.match?(/bar/)
+  end
 end

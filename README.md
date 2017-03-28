@@ -1,4 +1,4 @@
-## Implements Regexp#match? and String#match? in Ruby < 2.4.
+## Implements Regexp#match?, String#match? and Symbol#match? in Ruby < 2.4.
 
 [![Gem Version](https://badge.fury.io/rb/regexp-match-polyfill.svg)](https://badge.fury.io/rb/regexp-match-polyfill)
 [![Build Status](https://travis-ci.org/yivo/regexp-match-polyfill.svg?branch=master)](https://travis-ci.org/yivo/regexp-match-polyfill)
