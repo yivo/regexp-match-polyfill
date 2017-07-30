@@ -19,7 +19,7 @@ unless Regexp.instance_methods.include?(:match?) &&
     end
   end
 
-  Regexp.include RegexpMatchPolyfill::RegexpExtension
-  String.include RegexpMatchPolyfill::StringExtension
-  Symbol.include RegexpMatchPolyfill::StringExtension
+  Regexp.send :include, RegexpMatchPolyfill::RegexpExtension
+  String.send :include, RegexpMatchPolyfill::StringExtension
+  Symbol.send :include, RegexpMatchPolyfill::StringExtension
 end
